@@ -1,70 +1,45 @@
-# React + TypeScript + Vite
+# 🚀 AUTOU Moogle
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An experimental email client built with **React + TypeScript + Vite**, inspired by Gmail but as a parody version.
 
-Currently, two official plugins are available:
+## 📦 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ⚛️ [React](https://react.dev/) 19
+- 🔷 [TypeScript](https://www.typescriptlang.org/) 5
+- ⚡ [Vite](https://vitejs.dev/) 7
+- 🎨 [Tailwind CSS](https://tailwindcss.com/) 4
+- 🎭 [Phosphor Icons](https://phosphoricons.com/)
 
-## Expanding the ESLint configuration
+## 🛠️ Installation & Usage
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Clone the repository and install dependencies:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+[The project will be available here: http://localhost:5173/](http://localhost:5173/)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```json
+"dependencies": {
+  "@phosphor-icons/react": "^2.1.10",
+  "@tailwindcss/vite": "^4.1.12",
+  "react": "^19.1.1",
+  "react-dom": "^19.1.1",
+  "tailwindcss": "^4.1.12"
+},
+"devDependencies": {
+  "@eslint/js": "^9.33.0",
+  "@types/react": "^19.1.10",
+  "@types/react-dom": "^19.1.7",
+  "@vitejs/plugin-react": "^5.0.0",
+  "eslint": "^9.33.0",
+  "eslint-plugin-react-hooks": "^5.2.0",
+  "eslint-plugin-react-refresh": "^0.4.20",
+  "globals": "^16.3.0",
+  "typescript": "~5.8.3",
+  "typescript-eslint": "^8.39.1",
+  "vite": "^7.1.2"
+}
 ```
-# autou-moogle
