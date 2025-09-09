@@ -1,6 +1,7 @@
 # 🚀 AUTOU Moogle
 
 An experimental email client built with **React + TypeScript + Vite**, inspired by Gmail but as a parody version.
+[Demo Video](https://www.youtube.com/watch?v=ZA20w9USzZc)
 
 ## 📦 Tech Stack
 
