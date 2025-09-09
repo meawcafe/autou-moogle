@@ -12,8 +12,12 @@ An experimental email client built with **React + TypeScript + Vite**, inspired 
 
 ## 🛠️ Installation & Usage
 
-Clone the repository and install dependencies:
-
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd autou-moogle
+```
+2. Install dependencies and run
 ```bash
 npm install
 npm run dev
