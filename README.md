@@ -23,6 +23,8 @@ npm install
 npm run dev
 ```
 
+### Note: the .env file only contains the API URL and is already included in the repository. No configuration is required.
+
 [The project will be available here: http://localhost:5173/](http://localhost:5173/)
 
 ```json
